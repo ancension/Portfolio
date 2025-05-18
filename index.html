@@ -126,12 +126,41 @@
     overflow: hidden;
     color: white;
     border: gray solid 2px;
+    cursor: pointer; 
+    transition: transform 0.3s cubic-bezier(.4,2,.3,1), box-shadow 0.3s;
   }
 
   .project-card1 {
     background-image: url('assets/img/bullkit/logowhite.png');
     background-size: cover;
   }
+
+  .project-card1:hover,
+  .project-card2:hover,
+  .project-card3:hover {
+    transform: scale(1.05) translateY(-8px) rotate(-1deg);
+    box-shadow: 0 8px 32px 0 rgba(13,202,240,0.15), 0 1.5px 8px 0 rgba(0,0,0,0.18);
+    z-index: 2;
+  }
+
+
+  .card.bg-dark.border-0.h-100.p-3 {
+    transition: background 0.7s cubic-bezier(.4,2,.3,1), color 0.7s cubic-bezier(.4,2,.3,1);
+  }
+
+  .card.bg-dark.border-0.h-100.p-3:hover {
+    background: #e6f6fa !important; /* Soft light blue, complements your accent */
+    color: #222 !important;
+  }
+
+  .card.bg-dark.border-0.h-100.p-3:hover .text-info,
+  .card.bg-dark.border-0.h-100.p-3:hover h5,
+  .card.bg-dark.border-0.h-100.p-3:hover p,
+  .card.bg-dark.border-0.h-100.p-3:hover i {
+    color: #222 !important;
+    transition: color 0.7s cubic-bezier(.4,2,.3,1);
+  }
+    
 
   
 
@@ -1097,12 +1126,12 @@
     AOS.init({ duration: 800, once: true });
   
     
-    new Typed('.typing', {
+   new Typed('.typing', {
       strings: [
         'Websites',
         'Mobile Apps',
         'Godot Games',
-        'App Prototypes'
+        'Cross-platform Apps'
       ],
       typeSpeed: 100,
       backSpeed: 50,
