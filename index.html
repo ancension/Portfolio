@@ -21,6 +21,11 @@
   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 >
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+
+
 
   <style>
     :root {
@@ -160,6 +165,87 @@
     color: #222 !important;
     transition: color 0.7s cubic-bezier(.4,2,.3,1);
   }
+
+  .skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card {
+    background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+
+
+  .text-python { color: #3776AB; }
+  .text-php { color: #8892be; }
+  .text-java { color: #f89820; }
+  .text-javascript { color: #f7df1e; }
+  .text-ts { color: #3178c6; }
+  .text-dart { color: #00b4ab; }
+  .text-gdscript { color: #e0e0e0; }
+
+  .text-bootstrap { color: #7952b3; }
+  .text-react { color: #61dafb; }
+
+
+  .skill-card h6 {
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+   #skills {
+      background: linear-gradient(to top,  rgba(32, 102, 114, 0.2), #1e2b2f);
+    }
+
+    .skill-card {
+      background-color: #1e1e1e;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .skill-card i {
+      font-size: 2.5rem;
+    }
+
+    .skill-card-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: 768px) {
+      .skill-card-col {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .skill-card-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+    }
+
     
 
   
@@ -211,7 +297,7 @@
     
       <div class="col-lg-4 text-center" data-aos="fade-right">
         <img
-          src="assets/img/profile.jpg"
+          src="assets/Perez Jimwell C2.JPG"
           class="img-fluid rounded-circle mb-3"
           alt="Profile"
           style="width: 300px; height: 300px; object-fit: cover;"
@@ -238,37 +324,37 @@
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card bg-dark border-0 h-100 p-3 animate__animated animate__fadeInUp">
               <div class="d-flex align-items-center mb-2">
-                <i class="bx bxl-flutter fs-2 text-info me-2"></i>
-                <h5 class="mb-0">Flutter Dev</h5>
-              </div>
-              <p class="small text-muted">Cross-platform apps for iOS & Android.</p>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card bg-dark border-0 h-100 p-3 animate__animated animate__fadeInUp animate__delay-0.5s">
-              <div class="d-flex align-items-center mb-2">
-                <i class="bx bxl-react fs-2 text-info me-2"></i>
-                <h5 class="mb-0">React Native</h5>
-              </div>
-              <p class="small text-muted">Mobile apps for iOS & Android using React Native.</p>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="card bg-dark border-0 h-100 p-3 animate__animated animate__fadeInUp animate__delay-1s">
-              <div class="d-flex align-items-center mb-2">
                 <i class="bx bx-globe fs-2 text-info me-2"></i>
                 <h5 class="mb-0">Web Dev</h5>
               </div>
               <p class="small text-muted">HTML5, CSS3, JavaScript, responsive design.</p>
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="800">
-            <div class="card bg-dark border-0 h-100 p-3 animate__animated animate__fadeInUp animate__delay-1.5s">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card bg-dark border-0 h-100 p-3 animate__animated animate__fadeInUp animate__delay-0.5s">
               <div class="d-flex align-items-center mb-2">
                 <i class="bx bxl-php fs-2 text-info me-2"></i>
                 <h5 class="mb-0">PHP & Bootstrap</h5>
               </div>
               <p class="small text-muted">Server-side scripting & sleek UIs.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card bg-dark border-0 h-100 p-3 animate__animated animate__fadeInUp animate__delay-1s">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bx bxl-flutter fs-2 text-info me-2"></i>
+                <h5 class="mb-0">Flutter Dev</h5>
+              </div>
+              <p class="small text-muted">Cross-platform apps for iOS & Android.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="card bg-dark border-0 h-100 p-3 animate__animated animate__fadeInUp animate__delay-1.5s">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bx bxl-react fs-2 text-info me-2"></i>
+                <h5 class="mb-0">React Native</h5>
+              </div>
+              <p class="small text-muted">Mobile apps for iOS & Android using React Native.</p>
             </div>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="1000">
@@ -299,63 +385,181 @@
 
 
 
+<section id="skills" class="py-5 text-light">
 
-
-
-<section id="skills" class="py-5 bg-dark text-light">
   <div class="container">
-    <h3 class="text-center mb-4" data-aos="fade-up">Skills</h3>
-    <div class="row g-4">
-      
-  
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <h5>React Native</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 89%"></div>
-        </div>
+    <h3 class="text-center mb-3" data-aos="fade-up">Technologies I Work With</h3>
+    <p class="text-center mb-5 text-muted" data-aos="fade-up" data-aos-delay="50">
+      Tools, languages, and platforms I use to build full-stack web and mobile applications.
+    </p>
 
-        <h5>Dart</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 90%"></div>
-        </div>
 
-        <h5>Java</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+    <div class="mb-5" data-aos="fade-up">
+      <h5 class="text-uppercase text-info mb-4">Programming Languages</h5>
+      <div class="row g-4 justify-content-center">
+        
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-php text-light mb-3"></i>
+            <h6>PHP</h6>
+          </div>
         </div>
-
-        <h5>JavaScript</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-js-square text-warning mb-3"></i>
+            <h6>JavaScript</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-python text-warning mb-3"></i>
+            <h6>Python</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-java text-danger mb-3"></i>
+            <h6>Java</h6>
+          </div>
+        </div>
+        
+        
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-code text-info mb-3"></i>
+            <h6>TypeScript</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-code-branch text-primary mb-3"></i>
+            <h6>Dart</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-terminal text-muted mb-3"></i>
+            <h6>GDScript</h6>
+          </div>
         </div>
       </div>
-
-
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <h5>Python</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 95%"></div>
-        </div>
-
-        <h5>PHP</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 93%"></div>
-        </div>
-
-        <h5>SQL</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 93%"></div>
-        </div>
-
-        <h5>Firebase</h5>
-        <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" style="width: 92%"></div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Frameworks & Libraries -->
+    <div class="mb-5" data-aos="fade-up">
+      <h5 class="text-uppercase text-info mb-4">Frameworks & Libraries</h5>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-bootstrap text-primary mb-3"></i>
+            <h6>Bootstrap</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-laravel text-danger mb-3"></i>
+            <h6>Laravel</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-mobile-alt text-light mb-3"></i>
+            <h6>Flutter</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-react text-info mb-3"></i>
+            <h6>React Native</h6>
+          </div>
+        </div>
+        
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-bolt text-warning mb-3"></i>
+            <h6>Expo</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-gamepad text-success mb-3"></i>
+            <h6>Godot</h6>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="mb-5" data-aos="fade-up">
+      <h5 class="text-uppercase text-info mb-4">Databases</h5>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-database text-info mb-3"></i>
+            <h6>MySQL</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-database text-light mb-3"></i>
+            <h6>SQLite</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-fire text-warning mb-3"></i>
+            <h6>Firebase</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fas fa-server text-success mb-3"></i>
+            <h6>Supabase</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div data-aos="fade-up">
+      <h5 class="text-uppercase text-info mb-4">Version Control</h5>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-git-alt text-danger mb-3"></i>
+            <h6>Git</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-github text-light mb-3"></i>
+            <h6>GitHub</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-gitlab text-warning mb-3"></i>
+            <h6>GitLab</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 skill-card-col">
+          <div class="card skill-card text-center p-4">
+            <i class="fab fa-bitbucket text-primary mb-3"></i>
+            <h6>Bitbucket</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
+
+
+
+
+
 
 
  
@@ -493,7 +697,11 @@
 
 
 
-<section id="contact" class="py-5 text-light">
+<section id="contact" class="py-5 text-light"
+style="
+      background: linear-gradient(to top, #1e2b2f, rgba(32, 102, 114, 0.2));"
+
+>
   <div class="container text-center" data-aos="fade-up">
     <h3 class="mb-4">Let’s Connect</h3>
     <div class="d-flex justify-content-center gap-4">
@@ -516,7 +724,7 @@
     <!-- Optional: Display text below icons -->
     <div class="mt-3">
       <p>Email: <a href="mailto:staycalmkksz@gmail.com" class="text-light">staycalmkksz@gmail.com</a></p>
-      <p>Phone: <a href="tel:+1234567890" class="text-light">09652501145</a></p>
+      <p>Phone: <a href="tel:+1234567890" class="text-light">096525011  45</a></p>
     </div>
 
   </div>
@@ -525,7 +733,11 @@
 
 
 
-  <footer class="py-3 text-center text-light">
+  <footer class="py-3 text-center text-light"
+  style="
+      background: linear-gradient(to top, rgba(16, 47, 53, 0.2), #1e2b2f);"
+
+>
     <small>&copy; 2025 Jimwell Perez. All rights reserved.</small>
   </footer>
 
@@ -1133,7 +1345,11 @@
 
 
 
-
+  <!-- Optional AOS init -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
